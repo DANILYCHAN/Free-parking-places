@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Определение занятости парковок</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=67e93d14-1f20-4ae7-a5d8-8f666c45ff95&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="search_control_ppo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [55.65, 37.66],
+                zoom: 10
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="map" style="width: 1080px; height: 1020px; padding: 0; margin: 0"></div>
+</body>
+
+</html>
