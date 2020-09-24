@@ -12,13 +12,25 @@
         center: [55.76, 37.64],
         controls: []
         });
+var listItems = [
+      new ymaps.control.ListBoxItem('Москва'),
+      new ymaps.control.ListBoxItem('Санкт-Петербург')
+    ],
+
+    myListBox = new ymaps.control.ListBox({
+      data: {
+        content: 'Выбрать город'
+      },
+      items: listItems
+    });
+
+myMap.controls.add(myListBox);
 myMap.controls.add('zoomControl');
 myMap.controls.add('rulerControl', {
     scaleLine: false
 });
 myMap.controls.add('fullscreenControl');
 myMap.controls.add('geolocationControl');
-myMap.controls.add('routeEditor');
 myMap.controls.add('trafficControl');
 myMap.controls.add('searchControl', {
     float: 'left',
