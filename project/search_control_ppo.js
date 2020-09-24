@@ -1,9 +1,4 @@
-function init() {
-    var myMap = new ymaps.Map('map', {
-        center: [55.76, 37.64],
-        zoom: 10,
-        controls: []
-    });
+    ymaps.ready(init);
 
     // Создадим экземпляр элемента управления «поиск по карте»
     // с установленной опцией провайдера данных для поиска по организациям.
@@ -18,5 +13,3 @@ function init() {
     // Программно выполним поиск МИФИ
     searchControl.search('МИФИ');
 }
-
-ymaps.ready(init);
