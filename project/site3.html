@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Определение занятости парковок</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=67e93d14-1f20-4ae7-a5d8-8f666c45ff95&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+        var myMap = new ymaps.Map('map', {
+        zoom: 12,
+        center: [55.76, 37.64],
+        controls: []
+        });
+
+        var actualProvider = new ymaps.traffic.provider.Actual();
+        actualProvider.setMap(myMap);
+        actualProvider.state.events.add('change', function () {
+        console.log(actualProvider.state.get('level'))});
+
+var listItems = [
+      new ymaps.control.ListBoxItem('Москва'),
+      new ymaps.control.ListBoxItem('Санкт-Петербург')
+    ],
+
+    myListBox = new ymaps.control.ListBox({
+      data: {
+        content: 'Выбрать город'
+      },
+      items: listItems
+    });
+
+myMap.controls.add(myListBox);
+myMap.controls.add('zoomControl');
+myMap.controls.add('rulerControl', {
+    scaleLine: false
+});
+myMap.controls.add('fullscreenControl');
+myMap.controls.add('geolocationControl');
+myMap.controls.add('trafficControl');
+myMap.controls.add('searchControl', {
+    float: 'left',
+    provider: 'yandex#search'
+});
+myMap.controls.add('typeSelector');
+myMap.controls.add('routeButtonControl');
+      }
+    </script>
+    <style>
+      html, body, #map {
+          width: 100%; height: 100%; padding: 0; margin: 0;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+</html>
