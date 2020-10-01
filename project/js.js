@@ -12,7 +12,8 @@ function init() {
 
     var searchControl = new ymaps.control.SearchControl({
         options: {
-            provider: 'yandex#search'
+            provider: 'yandex#search',
+            size: 'small'
         }
     });
     
