@@ -14,8 +14,8 @@ function init() {
         options: {
             provider: 'yandex#search',
             size: 'small',
-            noPopup: 'true'
-
+            noPopup: 'true',
+            float: 'bottom'
         }
     });
     
