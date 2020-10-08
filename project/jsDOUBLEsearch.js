@@ -4,11 +4,11 @@ function init() {
         zoom: 13,
         controls: []
     });
-    
+
    // var actualProvider = new ymaps.traffic.provider.Actual();
    //     actualProvider.setMap(myMap);
    //     actualProvider.state.events.add('change', function () {
-   //     console.log(actualProvider.state.get('level'))}); 
+   //     console.log(actualProvider.state.get('level'))});
 
     var searchControl = new ymaps.control.SearchControl({
         options: {
@@ -18,7 +18,7 @@ function init() {
             float: 'bottom'
         }
     });
-    
+
     var listItems = [
       new ymaps.control.ListBoxItem('Москва'),
       new ymaps.control.ListBoxItem('Санкт-Петербург')
@@ -35,16 +35,22 @@ myMap.controls.add(myListBox);
 myMap.controls.add('zoomControl');
 myMap.controls.add('rulerControl', {
     scaleLine: false
-});    
+});
 myMap.controls.add('fullscreenControl');
 myMap.controls.add('geolocationControl');
 myMap.controls.add('typeSelector');
 myMap.controls.add(searchControl);
     searchControl.search('Автомобильная парковка');
-searchControl.events.add('resultselect', function (e) {
-    var index = searchControl.getSelectedIndex(e);
-    console.log("Индекс выбранного элемента: " + index);
-})
+    searchControl.events.add('resultselect', function (e) {
+        // Получает массив результатов.
+        var results = searchControl.getResultsArray();
+        // Индекс выбранного объекта.
+        var selected = e.get('index');
+        // Получает координаты выбранного объекта.
+        var point = results[selected].geometry.getCoordinates();
+        console.log("Индекс выбранного элемента: " + selected);
+        console.log("Координаты: " + point);
+    })
 myMap.controls.add('searchControl', {
     float: 'left',
     provider: 'yandex#search'
