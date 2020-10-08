@@ -5,10 +5,10 @@ function init() {
         controls: []
     });
     
-    var actualProvider = new ymaps.traffic.provider.Actual();
-        actualProvider.setMap(myMap);
-        actualProvider.state.events.add('change', function () {
-        console.log(actualProvider.state.get('level'))});
+   // var actualProvider = new ymaps.traffic.provider.Actual();
+   //     actualProvider.setMap(myMap);
+   //     actualProvider.state.events.add('change', function () {
+   //     console.log(actualProvider.state.get('level'))}); 
 
     var searchControl = new ymaps.control.SearchControl({
         options: {
@@ -41,6 +41,10 @@ myMap.controls.add('geolocationControl');
 myMap.controls.add('typeSelector');
 myMap.controls.add(searchControl);
     searchControl.search('Автомобильная парковка');
+searchControl.events.add('resultselect', function (e) {
+    var index = searchControl.getSelectedIndex(e);
+    console.log("Индекс выбранного элемента: " + index);
+})
 myMap.controls.add('searchControl', {
     float: 'left',
     provider: 'yandex#search'
