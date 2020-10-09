@@ -5,10 +5,10 @@ function init() {
         controls: []
     });
 
-   // var actualProvider = new ymaps.traffic.provider.Actual();
-   //     actualProvider.setMap(myMap);
-   //     actualProvider.state.events.add('change', function () {
-   //     console.log(actualProvider.state.get('level'))});
+    var actualProvider = new ymaps.traffic.provider.Actual();
+    actualProvider.setMap(myMap);
+    actualProvider.state.events.add('change', function () {
+    console.log(actualProvider.state.get('level'))});
 
     var searchControl = new ymaps.control.SearchControl({
         options: {
