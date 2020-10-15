@@ -15,7 +15,8 @@ function init() {
             provider: 'yandex#search',
             size: 'small',
             noPopup: 'true',
-            float: 'bottom'
+            float: 'bottom',
+            noPlacemark: 'true'
         }
     });
 
@@ -41,16 +42,26 @@ myMap.controls.add('geolocationControl');
 myMap.controls.add('typeSelector');
 myMap.controls.add(searchControl);
     searchControl.search('Автомобильная парковка');
+
     searchControl.events.add('resultselect', function (e) {
-        // Получает массив результатов.
         var results = searchControl.getResultsArray();
-        // Индекс выбранного объекта.
-        var selected = e.get('index');
-        // Получает координаты выбранного объекта.
-        var point = results[selected].geometry.getCoordinates();
-        console.log("Индекс выбранного элемента: " + selected);
-        console.log("Координаты: " + point);
-    })
+        for (var i = 0; i < 4; i++) {
+          console.log("Индекс выбранного элемента: " + results[i].geometry.getCoordinates());
+        }
+
+        var myCollection = new ymaps.GeoObjectCollection({}, {
+            preset: 'islands#redCircleIcon', //все метки красные
+            draggable: false // и их можно перемещать
+        });
+
+        for (var i = 0; i < results.length; i++) {
+          var selected = i;
+          myCollection.add(new ymaps.Placemark(results[selected].geometry.getCoordinates()));
+        }
+
+        myMap.geoObjects.add(myCollection);
+        })
+
 myMap.controls.add('searchControl', {
     float: 'left',
     provider: 'yandex#search'
