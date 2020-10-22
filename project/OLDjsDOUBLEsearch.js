@@ -16,8 +16,7 @@ function init() {
             size: 'small',
             noPopup: 'true',
             float: 'bottom',
-            noPlacemark: 'true',
-            geoObjectStandardPreset: 'islands#redCircleDotIcon'
+            noPlacemark: 'true'
         }
     });
 
@@ -43,15 +42,25 @@ myMap.controls.add('geolocationControl');
 myMap.controls.add('typeSelector');
 myMap.controls.add(searchControl);
     searchControl.search('Автомобильная парковка');
-    searchControl.events.add('load', function (event) {
-    // Проверяем, что это событие не "дозагрузки" результатов и
-    // по запросу найден хотя бы один результат.
-    if (!event.get('skip') && searchControl.getResultsCount()) {
-        var geoObjectsArray = searchControl.getResultsArray();
-        /* console.log(searchControl.options) */
-    }
-});
- 
+
+    searchControl.events.add('resultselect', function (e) {
+        var results = searchControl.getResultsArray();
+        for (var i = 0; i < 4; i++) {
+          console.log("Индекс выбранного элемента: " + results[i].geometry.getCoordinates());
+        }
+
+        var myCollection = new ymaps.GeoObjectCollection({}, {
+            preset: 'islands#redCircleIcon', //все метки красные
+            draggable: false // и их можно перемещать
+        });
+
+        for (var i = 0; i < results.length; i++) {
+          var selected = i;
+          myCollection.add(new ymaps.Placemark(results[selected].geometry.getCoordinates()));
+        }
+
+        myMap.geoObjects.add(myCollection);
+        })
 
 myMap.controls.add('searchControl', {
     float: 'left',
