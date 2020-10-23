@@ -48,11 +48,11 @@ myMap.controls.add(searchControl);
     // по запросу найден хотя бы один результат.
     if (!event.get('skip') && searchControl.getResultsCount()) {
         var geoObjectsArray = searchControl.getResultsArray();
-        geoObjectsArray[0].options.set('preset', 'islands#greenIcon');
-        geoObjectsArray[1].options.set('preset', 'islands#greenIcon');
-        geoObjectsArray[2].options.set('preset', 'islands#greenIcon');
-        geoObjectsArray[3].options.set('preset', 'islands#greenIcon');
-        geoObjectsArray[4].options.set('preset', 'islands#greenIcon')
+        geoObjectsArray[0].options.set('preset', 'islands#greenCircleDotIcon');
+        geoObjectsArray[1].options.set('preset', 'islands#yellowCircleDotIcon');
+        geoObjectsArray[2].options.set('preset', 'islands#greenCircleDotIcon');
+        geoObjectsArray[3].options.set('preset', 'islands#yellowCircleDotIcon');
+        geoObjectsArray[4].options.set('preset', 'islands#greenCircleDotIcon')
         /* console.log(searchControl.options) */
     }
 });
