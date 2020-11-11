@@ -42,10 +42,10 @@ myMap.controls.add('fullscreenControl');
 myMap.controls.add('geolocationControl');
 myMap.controls.add('typeSelector');
 myMap.controls.add(searchControl);
-    searchControl.search('Автомобильная парковка');
+    searchControl.search('Парковка');
     searchControl.events.add('load', function (event) {
-    // Проверяем, что это событие не "дозагрузки" результатов и
-    // по запросу найден хотя бы один результат.
+    // Проверяем, что это событие не "дозагрузки" результатов и //
+    // по запросу найден хотя бы один результат. //
     if (!event.get('skip') && searchControl.getResultsCount()) {
         var geoObjectsArray = searchControl.getResultsArray();
         geoObjectsArray[0].options.set('preset', 'islands#greenCircleDotIcon');
