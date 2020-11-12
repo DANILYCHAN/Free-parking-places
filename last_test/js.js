@@ -7,9 +7,7 @@ function init() {
         }, {
             searchControlProvider: 'yandex#search'
         }),
-let now = new Date();
-alert( now );
-console.log(now);
+
         myGeoObject = new ymaps.GeoObject({
             // Описание геометрии.
             geometry: {
@@ -28,7 +26,9 @@ console.log(now);
     let sk = 13;
     let ttk = 13;
     let out = 40;
-
+    let now = new Date();
+alert( now );
+console.log(now);
         myMap.geoObjects
         .add(myGeoObject)
         .add(new ymaps.Placemark([100, 100], {
