@@ -7,7 +7,9 @@ function init() {
         }, {
             searchControlProvider: 'yandex#search'
         }),
-
+let now = new Date();
+alert( now );
+console.log(now);
         myGeoObject = new ymaps.GeoObject({
             // Описание геометрии.
             geometry: {
