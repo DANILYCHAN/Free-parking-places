@@ -27,8 +27,12 @@ function init() {
     let ttk = 13;
     let out = 40;
     let now = new Date();
-alert( now );
-console.log(now);
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let day = now.getDay();
+    console.log(hours);
+    console.log(minutes);
+    console.log(day);
         myMap.geoObjects
         .add(myGeoObject)
         .add(new ymaps.Placemark([100, 100], {
