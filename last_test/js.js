@@ -3,7 +3,8 @@ ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map('map', {
       center: [55.74, 37.58],
-      zoom: 11
+      zoom: 11,
+      controls: []
         }, {
             searchControlProvider: 'yandex#search'
         }),
@@ -254,17 +255,22 @@ function init() {
             preset: 'islands#circleIcon',
             iconColor: color_out
         }));
+
+        var actualProvider = new ymaps.traffic.provider.Actual();
+        actualProvider.setMap(myMap);
+        actualProvider.state.events.add('change', function () {
+        console.log(actualProvider.state.get('level'))});
+
+        myMap.controls.add('zoomControl');
+        myMap.controls.add('rulerControl', {
+            scaleLine: false
+        });
+        myMap.controls.add('fullscreenControl');
+        myMap.controls.add('geolocationControl');
+        myMap.controls.add('typeSelector');
+
+        myMap.controls.add('searchControl', {
+            float: 'left',
+            provider: 'yandex#search'
+        });
     }
-
-myMap.controls.add('zoomControl');
-myMap.controls.add('rulerControl', {
-    scaleLine: false
-});
-myMap.controls.add('fullscreenControl');
-myMap.controls.add('geolocationControl');
-myMap.controls.add('typeSelector');
-
-myMap.controls.add('searchControl', {
-    float: 'left',
-    provider: 'yandex#search'
-});
