@@ -258,9 +258,7 @@ function init() {
 
         var actualProvider = new ymaps.traffic.provider.Actual();
         actualProvider.setMap(myMap);
-        actualProvider.state.events.add('change', function () {
-        console.log(actualProvider.state.get('level'))});
-
+        
         myMap.controls.add('zoomControl');
         myMap.controls.add('rulerControl', {
             scaleLine: false
@@ -268,7 +266,6 @@ function init() {
         myMap.controls.add('fullscreenControl');
         myMap.controls.add('geolocationControl');
         myMap.controls.add('typeSelector');
-
         myMap.controls.add('searchControl', {
             float: 'left',
             provider: 'yandex#search'
