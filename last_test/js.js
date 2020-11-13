@@ -43,6 +43,7 @@ function init() {
         if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
         if (day = 0) { out = Math.ceil(out * 0.15); color_out = 'red'; };
         color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
+        break;
 			case 7:
 				bk = Math.ceil(bk * 0.55);
         sk = Math.ceil(sk * 0.40);
@@ -51,6 +52,7 @@ function init() {
         if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
         if (day = 0) { out = Math.ceil(out * 0.15); color_out = 'red'; };
         color_bk= 'green'; color_sk= 'yellow'; color_ttk= 'green';
+        break;
 			case 8:
         if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'yellow'; };
         if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
@@ -66,6 +68,7 @@ function init() {
           ttk = Math.ceil(ttk * 0.45);
           color_bk = 'yellow'; color_ttk = 'green';
         };
+        break;
       case 9:
        bk = Math.ceil(bk * 0.18);
        sk = Math.ceil(sk * 0.25);
@@ -74,6 +77,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.15); color_out = 'red'; };
        color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'yellow';
+       break;
       case 10:
        bk = Math.ceil(bk * 0.03);
        sk = Math.ceil(sk * 0.20);
@@ -83,6 +87,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
        color_bk = 'red';  color_sk = 'yellow';  color_ttk = 'yellow';
+       break;
       case 11:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
@@ -91,6 +96,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
+       break;
       case 12:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
@@ -99,6 +105,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
+       break;
       case 13:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
@@ -107,6 +114,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
+       break;
       case 14:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.10);
@@ -115,6 +123,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
+       break;
       case 15:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
@@ -123,6 +132,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
+       break;
       case 16:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
@@ -131,6 +141,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
+       break;
       case 17:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
@@ -139,6 +150,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.3); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
+       break;
       case 18:
         bk = Math.ceil(bk * 0.015);
         sk = Math.ceil(sk * 0.15);
@@ -147,6 +159,7 @@ function init() {
         if (day = 6) { out = Math.ceil(out * 0.3); color_out = 'yellow'; };
         if (day = 0) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
         color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
+        break;
       case 19:
        bk = Math.ceil(bk * 0.05);
        sk = Math.ceil(sk * 0.22);
@@ -155,6 +168,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
        if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'yellow';
+       break;
       case 20:
         bk = Math.ceil(bk * 0.15);
         sk = Math.ceil(sk * 0.27);
@@ -163,6 +177,7 @@ function init() {
         if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
         if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
         color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'green';
+        break;
       case 21:
        bk = Math.ceil(bk * 0.24);
        sk = Math.ceil(sk * 0.30);
@@ -171,6 +186,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
        if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
        color_bk= 'yellow'; color_sk= 'yellow'; color_ttk= 'green';
+       break;
       case 22:
         bk = Math.ceil(bk * 0.30);
         sk = Math.ceil(sk * 0.42);
@@ -179,6 +195,7 @@ function init() {
         if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
         if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
         color_bk= 'yellow'; color_sk= 'green'; color_ttk= 'green';
+        break;
       case 23:
        bk = Math.ceil(bk * 0.40);
        sk = Math.ceil(sk * 0.52);
@@ -187,6 +204,7 @@ function init() {
        if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
        if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
        color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
+       break;
       case 0:
       case 1:
       case 2:
@@ -200,6 +218,7 @@ function init() {
         if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
         if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
         color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
+        break;
 	}
 
 
