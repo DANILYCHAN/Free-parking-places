@@ -40,8 +40,8 @@ function init() {
         sk = Math.floor(sk * 0.55);
         ttk = Math.floor(ttk * 0.67);
         if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.15); color_out = 'red'; };
-        if (day = 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
-        if (day = 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
         color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
         break;
 			case 7:
@@ -49,14 +49,14 @@ function init() {
         sk = Math.floor(sk * 0.40);
         ttk = Math.floor(ttk * 0.61);
         if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.15); color_out = 'red'; };
-        if (day = 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
-        if (day = 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
         color_bk= 'green'; color_sk= 'yellow'; color_ttk= 'green';
         break;
 			case 8:
         if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'yellow'; };
-        if (day = 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
-        if (day = 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
         sk = Math.floor(sk * 0.27);
         color_sk = 'yellow';
         if (minutes <= 30) {
@@ -74,8 +74,8 @@ function init() {
        sk = Math.floor(sk * 0.25);
        ttk = Math.floor(ttk * 0.35);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
+       if (day == 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.15); color_out = 'red'; };
        color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'yellow';
        break;
       case 10:
@@ -84,8 +84,8 @@ function init() {
        ttk = Math.floor(ttk * 0.21);
        color_bk = 'red';  color_sk = 'yellow';  color_ttk = 'yellow';
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
        color_bk = 'red';  color_sk = 'yellow';  color_ttk = 'yellow';
        break;
       case 11:
@@ -93,8 +93,8 @@ function init() {
        sk = Math.floor(sk * 0.15);
        ttk = Math.floor(ttk * 0.20);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
        break;
       case 12:
@@ -102,8 +102,8 @@ function init() {
        sk = Math.floor(sk * 0.15);
        ttk = Math.floor(ttk * 0.19);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
        break;
       case 13:
@@ -111,8 +111,8 @@ function init() {
        sk = Math.floor(sk * 0.15);
        ttk = Math.floor(ttk * 0.18);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
        break;
       case 14:
@@ -120,8 +120,8 @@ function init() {
        sk = Math.floor(sk * 0.10);
        ttk = Math.floor(ttk * 0.18);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
        break;
       case 15:
@@ -129,8 +129,8 @@ function init() {
        sk = Math.floor(sk * 0.15);
        ttk = Math.floor(ttk * 0.19);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
        break;
       case 16:
@@ -138,8 +138,8 @@ function init() {
        sk = Math.floor(sk * 0.15);
        ttk = Math.floor(ttk * 0.20);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.40); color_out = 'green'; };
-       if (day = 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.35); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
        break;
       case 17:
@@ -147,8 +147,8 @@ function init() {
        sk = Math.floor(sk * 0.15);
        ttk = Math.floor(ttk * 0.21);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
-       if (day = 6) { out = Math.floor(out * 0.3); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.3); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
        break;
       case 18:
@@ -156,8 +156,8 @@ function init() {
         sk = Math.floor(sk * 0.15);
         ttk = Math.floor(ttk * 0.22);
         if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
-        if (day = 6) { out = Math.floor(out * 0.3); color_out = 'yellow'; };
-        if (day = 0) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+        if (day == 6) { out = Math.floor(out * 0.3); color_out = 'yellow'; };
+        if (day == 0) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
         color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
         break;
       case 19:
@@ -165,8 +165,8 @@ function init() {
        sk = Math.floor(sk * 0.22);
        ttk = Math.floor(ttk * 0.22);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
-       if (day = 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
-       if (day = 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
+       if (day == 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+       if (day == 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
        color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'yellow';
        break;
       case 20:
@@ -174,8 +174,8 @@ function init() {
         sk = Math.floor(sk * 0.27);
         ttk = Math.floor(ttk * 0.40);
         if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.10); color_out = 'red'; };
-        if (day = 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
-        if (day = 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
+        if (day == 6) { out = Math.floor(out * 0.25); color_out = 'yellow'; };
+        if (day == 0) { out = Math.floor(out * 0.20); color_out = 'yellow'; };
         color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'green';
         break;
       case 21:
@@ -183,8 +183,8 @@ function init() {
        sk = Math.floor(sk * 0.30);
        ttk = Math.floor(ttk * 0.55);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.10); color_out = 'red'; };
-       if (day = 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
-       if (day = 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
+       if (day == 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
+       if (day == 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
        color_bk= 'yellow'; color_sk= 'yellow'; color_ttk= 'green';
        break;
       case 22:
@@ -192,8 +192,8 @@ function init() {
         sk = Math.floor(sk * 0.42);
         ttk = Math.floor(ttk * 0.62);
         if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.10); color_out = 'red'; };
-        if (day = 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
-        if (day = 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
+        if (day == 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
         color_bk= 'yellow'; color_sk= 'green'; color_ttk= 'green';
         break;
       case 23:
@@ -201,8 +201,8 @@ function init() {
        sk = Math.floor(sk * 0.52);
        ttk = Math.floor(ttk * 0.68);
        if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.10); color_out = 'red'; };
-       if (day = 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
-       if (day = 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
+       if (day == 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
+       if (day == 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
        color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
        break;
       case 0:
@@ -215,8 +215,8 @@ function init() {
         sk = Math.floor(sk * 0.52);
         ttk = Math.floor(ttk * 0.68);
         if ((day >= 1) && (day <=5)) { out = Math.floor(out * 0.10); color_out = 'red'; };
-        if (day = 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
-        if (day = 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
+        if (day == 6) { out = Math.floor(out * 0.15); color_out = 'red'; };
+        if (day == 0) { out = Math.floor(out * 0.10); color_out = 'red'; };
         color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
         break;
 	}
