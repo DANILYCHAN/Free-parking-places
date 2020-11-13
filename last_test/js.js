@@ -21,10 +21,10 @@ function init() {
             iconColor: '#3caa3c'
         });
 
-    let bk = bk_d = 10;
-    let sk = sd_d = 13;
-    let ttk = ttk_d = 13;
-    let out = out_d = 40;
+    let bk = 10;
+    let sk = 13;
+    let ttk = 13;
+    let out = 40;
     let now = new Date();
     let hours = now.getHours();
     let minutes = now.getMinutes();
@@ -39,153 +39,154 @@ function init() {
 				bk = Math.ceil(bk * 0.65);
         sk = Math.ceil(sk * 0.55);
         ttk = Math.ceil(ttk * 0.67);
-        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        if (day = 6) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        if (day = 0) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        color_bk= '#008000'; color_sk= '#008000'; color_ttk= '#008000';
+        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        if (day = 0) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
 			case 7:
 				bk = Math.ceil(bk * 0.55);
         sk = Math.ceil(sk * 0.40);
         ttk = Math.ceil(ttk * 0.61);
-        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        if (day = 6) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        if (day = 0) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        color_bk= '#008000'; color_sk= '#3caa3c'; color_ttk= '#008000';
+        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        if (day = 0) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        color_bk= 'green'; color_sk= 'yellow'; color_ttk= 'green';
 			case 8:
-        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-        if (day = 6) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        if (day = 0) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
+        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'yellow'; };
+        if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        if (day = 0) { out = Math.ceil(out * 0.15); color_out = 'red'; };
         sk = Math.ceil(sk * 0.27);
-        color_sk = '#ffff00';
+        color_sk = 'yellow';
         if (minutes <= 30) {
           bk = Math.ceil(bk * 0.40);
           ttk = Math.ceil(ttk * 0.53);
-          color_bk = '#3caa3c';  color_ttk = '#3caa3c';
+          color_bk = 'green';  color_ttk = 'green';
         } else {
           bk = Math.ceil(bk * 0.25);
           ttk = Math.ceil(ttk * 0.45);
-          color_bk = '#ffff00'; color_ttk = '#3caa3c';
+          color_bk = 'yellow'; color_ttk = 'green';
         };
       case 9:
        bk = Math.ceil(bk * 0.18);
        sk = Math.ceil(sk * 0.25);
        ttk = Math.ceil(ttk * 0.35);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-       color_bk= '#ff0000'; color_sk= '#ffff00'; color_ttk= '#ffff00';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+       color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'yellow';
       case 10:
        bk = Math.ceil(bk * 0.03);
        sk = Math.ceil(sk * 0.20);
        ttk = Math.ceil(ttk * 0.21);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-       color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ffff00';
+       color_bk = 'red';  color_sk = 'yellow';  color_ttk = 'yellow';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+       color_bk = 'red';  color_sk = 'yellow';  color_ttk = 'yellow';
       case 11:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
        ttk = Math.ceil(ttk * 0.20);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-       color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ff0000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
       case 12:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
        ttk = Math.ceil(ttk * 0.19);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-       color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ff0000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
       case 13:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
        ttk = Math.ceil(ttk * 0.18);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.35); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.35); color_out = '#ffff00'; };
-       color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ff0000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
       case 14:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.10);
        ttk = Math.ceil(ttk * 0.18);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.35); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.35); color_out = '#ffff00#ffff00'; };
-       color_bk= '#5c0000'; color_sk= '#5c0000'; color_ttk= '#ff0000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
       case 15:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
        ttk = Math.ceil(ttk * 0.19);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.35); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.35); color_out = '#ffff00'; };
-       color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ff0000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'red'; color_ttk= 'red';
       case 16:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
        ttk = Math.ceil(ttk * 0.20);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = '#00ff00'; };
-       if (day = 6) { out = Math.ceil(out * 0.35); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-       color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ff0000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.40); color_out = 'green'; };
+       if (day = 6) { out = Math.ceil(out * 0.35); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
       case 17:
        bk = Math.ceil(bk * 0.015);
        sk = Math.ceil(sk * 0.15);
        ttk = Math.ceil(ttk * 0.21);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-       if (day = 6) { out = Math.ceil(out * 0.3); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-       color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ffff00';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+       if (day = 6) { out = Math.ceil(out * 0.3); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
       case 18:
         bk = Math.ceil(bk * 0.015);
         sk = Math.ceil(sk * 0.15);
         ttk = Math.ceil(ttk * 0.22);
-        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-        if (day = 6) { out = Math.ceil(out * 0.3); color_out = '#ffff00'; };
-        if (day = 0) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-        color_bk= '#5c0000'; color_sk= '#ff0000'; color_ttk= '#ffff00';
+        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+        if (day = 6) { out = Math.ceil(out * 0.3); color_out = 'yellow'; };
+        if (day = 0) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+        color_bk= 'red'; color_sk= 'red'; color_ttk= 'yellow';
       case 19:
        bk = Math.ceil(bk * 0.05);
        sk = Math.ceil(sk * 0.22);
        ttk = Math.ceil(ttk * 0.22);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-       if (day = 6) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-       if (day = 0) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-       color_bk= '#5c0000'; color_sk= '#ffff00'; color_ttk= '#ffff00';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+       if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+       if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+       color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'yellow';
       case 20:
         bk = Math.ceil(bk * 0.15);
         sk = Math.ceil(sk * 0.27);
         ttk = Math.ceil(ttk * 0.40);
-        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-        if (day = 6) { out = Math.ceil(out * 0.25); color_out = '#ffff00'; };
-        if (day = 0) { out = Math.ceil(out * 0.20); color_out = '#ff0000'; };
-        color_bk= '#ff0000'; color_sk= '#ffff00'; color_ttk= '#3caa3c';
+        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+        if (day = 6) { out = Math.ceil(out * 0.25); color_out = 'yellow'; };
+        if (day = 0) { out = Math.ceil(out * 0.20); color_out = 'yellow'; };
+        color_bk= 'red'; color_sk= 'yellow'; color_ttk= 'green';
       case 21:
        bk = Math.ceil(bk * 0.24);
        sk = Math.ceil(sk * 0.30);
        ttk = Math.ceil(ttk * 0.55);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-       if (day = 6) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-       if (day = 0) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-       color_bk= '#ffff00'; color_sk= '#ffff00'; color_ttk= '#008000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+       if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+       if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+       color_bk= 'yellow'; color_sk= 'yellow'; color_ttk= 'green';
       case 22:
         bk = Math.ceil(bk * 0.30);
         sk = Math.ceil(sk * 0.42);
         ttk = Math.ceil(ttk * 0.62);
-        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-        if (day = 6) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        if (day = 0) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-        color_bk= '#ffff00'; color_sk= '#3caa3c'; color_ttk= '#008000';
+        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+        if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+        color_bk= 'yellow'; color_sk= 'green'; color_ttk= 'green';
       case 23:
        bk = Math.ceil(bk * 0.40);
        sk = Math.ceil(sk * 0.52);
        ttk = Math.ceil(ttk * 0.68);
-       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-       if (day = 6) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-       if (day = 0) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-       color_bk= '#3caa3c'; color_sk= '#3caa3c'; color_ttk= '#008000';
+       if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+       if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+       if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+       color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
       case 0:
       case 1:
       case 2:
@@ -195,10 +196,10 @@ function init() {
         bk = Math.ceil(bk * 0.75);
         sk = Math.ceil(sk * 0.52);
         ttk = Math.ceil(ttk * 0.68);
-        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-        if (day = 6) { out = Math.ceil(out * 0.15); color_out = '#ff0000'; };
-        if (day = 0) { out = Math.ceil(out * 0.10); color_out = '#5c0000'; };
-        color_bk= '#008000'; color_sk= '#008000'; color_ttk= '#008000';
+        if ((day >= 1) && (day <=5)) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+        if (day = 6) { out = Math.ceil(out * 0.15); color_out = 'red'; };
+        if (day = 0) { out = Math.ceil(out * 0.10); color_out = 'red'; };
+        color_bk= 'green'; color_sk= 'green'; color_ttk= 'green';
 	}
 
 
@@ -208,7 +209,7 @@ function init() {
             balloonContent: '   '
         }, {
             preset: 'islands#circleIcon',
-            iconColor: '#3caa3c'
+            iconColor: '#008000'
         }))
         .add(new ymaps.Placemark([55.755968, 37.625584], {
             balloonContent: 'Старопанский переулок, дом 5, строение 1 <br \/> Парковочных мест: 10 <br \/> Прогноз свободных мест: ' + bk
