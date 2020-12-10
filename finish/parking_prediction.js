@@ -69,7 +69,7 @@ ymaps.ready(function () {
                 color = 'green';
               } else {
                 bk = Math.floor(bk * 0.25);
-                color = 'yellow';
+                color = '#ffb300';
               };
               break;
              case 9:
@@ -122,11 +122,11 @@ ymaps.ready(function () {
               break;
              case 21:
               bk = Math.floor(bk * 0.24);
-              color= 'yellow';
+              color= '#ffb300';
               break;
              case 22:
               bk = Math.floor(bk * 0.30);
-              color= 'yellow';
+              color= '#ffb300';
               break;
              case 23:
               bk = Math.floor(bk * 0.40);
@@ -151,19 +151,19 @@ ymaps.ready(function () {
             break;
            case 7:
             bk = Math.floor(bk * 0.40);
-            color= 'yellow';
+            color= '#ffb300';
             break;
            case 8:
             bk = Math.floor(bk * 0.27);
-            color = 'yellow';
+            color = '#ffb300';
             break;
            case 9:
             bk = Math.floor(bk * 0.25);
-            color= 'yellow';
+            color= '#ffb300';
             break;
            case 10:
             bk = Math.floor(bk * 0.20);
-            color = 'yellow';
+            color = '#ffb300';
             break;
            case 11:
             bk = Math.floor(bk * 0.15);
@@ -199,15 +199,15 @@ ymaps.ready(function () {
             break;
            case 19:
             bk = Math.floor(bk * 0.22);
-            color= 'yellow';
+            color= '#ffb300';
             break;
            case 20:
             bk = Math.floor(bk * 0.27);
-            color= 'yellow';
+            color= '#ffb300';
             break;
            case 21:
             bk = Math.floor(bk * 0.30);
-            color= 'yellow';
+            color= '#ffb300';
             break;
            case 22:
             bk = Math.floor(bk * 0.42);
@@ -249,15 +249,15 @@ ymaps.ready(function () {
               break;
              case 9:
               bk = Math.floor(bk * 0.35);
-              color= 'yellow';
+              color= '#ffb300';
               break;
              case 10:
               bk = Math.floor(bk * 0.21);
-              color = 'yellow';
+              color = '#ffb300';
               break;
              case 11:
               bk = Math.floor(bk * 0.20);
-              color= 'yellow';
+              color= '#ffb300';
               break;
              case 12:
               bk = Math.floor(bk * 0.19);
@@ -277,19 +277,19 @@ ymaps.ready(function () {
               break;
              case 16:
               bk = Math.floor(bk * 0.20);
-              color= 'yellow';
+              color= '#ffb300';
               break;
              case 17:
               bk = Math.floor(bk * 0.21);
-              color= 'yellow';
+              color= '#ffb300';
               break;
              case 18:
                bk = Math.floor(bk * 0.22);
-               color= 'yellow';
+               color= '#ffb300';
                break;
              case 19:
                bk = Math.floor(bk * 0.22);
-               color= 'yellow';
+               color= '#ffb300';
                break;
              case 20:
                bk = Math.floor(bk * 0.40);
@@ -331,69 +331,69 @@ ymaps.ready(function () {
             if (day = 0) { bk = Math.floor(bk * 0.15); color = 'red'; };
             break;
            case 8:
-            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'yellow'; };
+            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
             if (day = 6) { bk = Math.floor(bk * 0.15); color = 'red'; };
             if (day = 0) { bk = Math.floor(bk * 0.15); color = 'red'; };
             break;
            case 9:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
             if (day = 0) { bk = Math.floor(bk * 0.15); color = 'red'; };
             break;
            case 10:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
             break;
            case 11:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
             break;
            case 12:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
             break;
            case 13:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.35); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.35); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.35); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.35); color = '#ffb300'; };
             break;
            case 14:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.35); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.35); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.35); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.35); color = '#ffb300'; };
             break;
            case 15:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.35); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.35); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.35); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.35); color = '#ffb300'; };
             break;
            case 16:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.40); color = 'green'; };
-            if (day = 6) { bk = Math.floor(bk * 0.35); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.35); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
             break;
            case 17:
-            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
-            if (day = 6) { bk = Math.floor(bk * 0.3); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
+            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
+            if (day = 6) { bk = Math.floor(bk * 0.3); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
             break;
            case 18:
-            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
-            if (day = 6) { bk = Math.floor(bk * 0.3); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
+            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
+            if (day = 6) { bk = Math.floor(bk * 0.3); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
             break;
            case 19:
-            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
-            if (day = 6) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
+            if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
+            if (day = 6) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
             break;
            case 20:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.10); color = 'red'; };
-            if (day = 6) { bk = Math.floor(bk * 0.25); color = 'yellow'; };
-            if (day = 0) { bk = Math.floor(bk * 0.20); color = 'yellow'; };
+            if (day = 6) { bk = Math.floor(bk * 0.25); color = '#ffb300'; };
+            if (day = 0) { bk = Math.floor(bk * 0.20); color = '#ffb300'; };
             break;
            case 21:
             if ((day >= 1) && (day <=5)) { bk = Math.floor(bk * 0.10); color = 'red'; };
